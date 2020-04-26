@@ -1,0 +1,261 @@
+/*----------------------------------------------------Vertical-----------------------------------------------------*/
+#sort-widget {
+    border: 1px solid #e0e0e0;
+    padding: 24px 24px 0;
+}
+
+#sort-widget h2 {
+    font-size: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#sort-widget button {
+    margin-top: 20px;
+}
+
+#sort-widget button[disabled] {
+    background-color: #eee;
+}
+
+#sort-widget button[disabled]:hover {
+    color: #000 !important;
+}
+
+/*----------------------------------------------------End Vertical-----------------------------------------------------*/
+/*----------------------------------------------------Select Custom style-----------------------------------------------------*/
+.widget .select-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.widget .select {
+    color: #565656;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.widget .select-styled {
+    background-color: transparent;
+    padding: 8px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-size: 15px;
+}
+
+.widget .select-styled:hover {
+    cursor: pointer;
+}
+
+.widget .select-styled.disabled {
+    background-color: #eee;
+}
+
+.widget .select-styled.disabled:hover {
+    cursor: default;
+}
+
+.widget .select-styled:after {
+    content: '\e903';
+    font-family: 'enova' !important;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 10px;
+    transform: rotate(90deg);
+}
+
+.widget .select-styled.active:after {
+    transform: rotate(-90deg);
+}
+
+.widget .select-styled:active, .widget .select-styled.active {
+    background-color: #fff;
+}
+
+.widget .select-styled:active:after, .widget .select-styled.active:after {
+    content: "\e903";
+}
+
+.widget .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 5px 0 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.widget .select-options li {
+    margin: 0;
+    padding: 8px 0;
+    display: block;
+    text-indent: 15px;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    font-size: 15px;
+}
+
+.widget .select-options li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.widget .select-options li[rel="hide"] {
+    display: none;
+}
+
+/*----------------------------------------------------End Select Custom style-----------------------------------------------------*/
+/*----------------------------------------------------loading-----------------------------------------------------*/
+.spinner {
+    text-align: center;
+}
+
+.spinner.small div {
+    height: 8px;
+    width: 8px
+}
+
+.spinner > div {
+    width: 13px;
+    height: 13px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 100%, 80% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 100%, 80% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.box.loading {
+    padding: 100px 0;
+    text-align: center;
+    background: #fff;
+}
+
+/*----------------------------------------End loading----------------------------------------------------*/
+/*-------------------------------------------Horizontal-------------------------------------------------*/
+#sort-widget.horizontal {
+    border: 0;
+    padding: 15px 0;
+    margin-bottom: 0;
+    box-shadow: 0px 2px 8px 2px rgba(167, 167, 167, 0.1);
+    -moz-box-shadow: 0px 2px 8px 2px rgba(167, 167, 167, 0.1);
+    -webkit-box-shadow: 0px 2px 8px 2px rgba(167, 167, 167, 0.1);
+    -o-box-shadow: 0px 2px 8px 2px rgba(167, 167, 167, 0.1);
+    position: relative;
+    z-index: 99;
+}
+
+#sort-widget.horizontal h2 {
+    display: none;
+}
+
+#sort-widget.horizontal form {
+    margin-bottom: 0;
+}
+
+#sort-widget.horizontal form .row-frm, #sort-widget.horizontal form .text-center {
+    float: right;
+    width: 19%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#sort-widget.horizontal button {
+    margin: 0;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    padding: 7px 18px;
+}
+
+#sort-widget.horizontal .select {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    #sort-widget.horizontal form .row-frm, #sort-widget.horizontal form .text-center {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sort-widget.horizontal form .row-frm, #sort-widget.horizontal form .text-center {
+        margin: 0 0 10px;
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------End Horizontal-------------------------------------------------*/
+/*-------------------------------------------Results-------------------------------------------------*/
+#sort-results .et-item.post.product {
+    float: right;
+    left: auto !important;
+    position: relative !important;
+    top: 0 !important;
+}
+
+#sort-results .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 2px;
+}
+
+#sort-results .title::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffd800;
+    border-radius: 50%;
+}
+
+/*-------------------------------------------End Results-------------------------------------------------*/
